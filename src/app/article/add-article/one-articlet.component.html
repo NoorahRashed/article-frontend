@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ADD-ARTICLE</title>
+</head>
+<body>
+    <app-header></app-header>
+    <div>
+        <h2>Create Article</h2>
+        <form (ngSubmit)="onSubmit()">
+            <div>
+                <label for="author">Author :</label><br>
+                <input type="text" id="author" class="text" [(ngModel)]="Article.author" name="author" required><br>
+            </div>
+            <div>
+                <label for="title">Title :</label><br>
+                <input type="text" id="title" class="text" [(ngModel)]="Article.title" name="title" required><br>
+            </div>
+            <div>
+                <label for="body">Body :</label><br>
+                <input type="text" id="body" class="text" [(ngModel)]="Article.body" name="body" required><br>
+            </div>
+            <div>
+                <label for="articledate">Articledate :</label><br>
+                <input type="datetime" id="articledate" class="text" [(ngModel)]="Article.articledate" name="articledate" required><br>
+            </div>
+            <div>
+                <label for="Likes">Likes :</label><br>
+                <input type="number" id="Likes" class="text" [(ngModel)]="Article.Likes" name="Likes" required><br>
+            </div>
+            <div>
+                <label for="DisLikes">DisLikes :</label><br>
+                <input type="number" id="DisLikes" class="text" [(ngModel)]="Article.DisLikes" name="DisLikes" required><br>
+            </div>
+            <div>
+                <label for="Disabled">Disabled .</label>
+                <input type="radio" id="Disabled" class="text" [(ngModel)]="Article.Disabled" name="Disabled" [value]="true" required><br>
+            </div>
+            <div>
+                <label for="Disabled">Enabled .</label>
+                <input type="radio" id="Disabled" class="text" [(ngModel)]="Article.Disabled" name="Disabled" [value]="false" required><br><br>
+            </div>
+            <button type="submit">Add your Article</button>
+        </form>
+    </div>
+</body>
+</html>

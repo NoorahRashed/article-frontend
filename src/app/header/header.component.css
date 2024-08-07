@@ -1,0 +1,21 @@
+
+/* ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+  }
+  
+  
+  li a:hover {
+    background-color: var(--p-color);
+  } */
+  nav{
+    margin-top: 80px;
+    height: 50px;
+    background-color: var(--optional-color);
+  }
+  .nav-link{
+    color: var(--wordes-color);
+  }

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>list of articles</title>
+</head>
+<body>
+  <h1>list of articles</h1>
+  <div class="card" *ngFor="let arti of Articles">
+    <div class="card-body" >
+        <small class="bg-liht text-danger text-center">  {{arti.DisLikes}}  </small>
+        <small class="bg-liht text-success text-center ml-3">  {{arti.Likes}}  </small>
+        <small class="bg-liht text-info text-center ml-3"> {{arti.author}} </small>
+        <h5 class="mt-1"> {{arti.title}} </h5>
+        <p> {{arti.body}} </p>
+        
+        <small class="bg-liht  text-center ml-3"> {{arti.articledate}} </small>
+        <button>more details</button>
+    </div>
+</div>
+</body>
+</html>

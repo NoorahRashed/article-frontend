@@ -1,0 +1,45 @@
+
+:root{
+    --page-color: #F8EDE3 ;
+    --wordes-color: #a86758;
+    --bacegruond-color: #dbb196;/*#dbb196  ,  #cc9d7e*/
+    --optional-color: #DFD3C3;
+    --p-color: #d69688;
+}
+body{
+    background-color: var(--page-color);
+}
+header {
+    height: 80px;
+    background-color: var(--optional-color);
+}
+.button-style{
+    padding: 5px 15px;
+    border-radius: 10px;
+    border-width: 3px;
+    border-color: var(--bacegruond-color);
+    background-color: var(--page-color);
+    color: var(--wordes-color);
+}
+h1,h2,h3,h4,h5,h6{
+    color: var(--wordes-color);
+}
+p{
+    color: var(--p-color);
+}
+label{
+    color: var(--wordes-color);
+}
+.text{
+    background-color: var(--baceground-color);
+    border-color: var(--bacegruond-color);
+    color: #5b0f0f;
+}
+button{
+    padding: 5px 15px;
+    border-radius: 10px;
+    border-width: 3px;
+    border-color: var(--bacegruond-color);
+    background-color: var(--page-color);
+    color: var(--wordes-color);
+}
