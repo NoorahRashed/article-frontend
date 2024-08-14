@@ -1,0 +1,155 @@
+<!-- <mat-toolbar color="primary">
+    <span>Website Name</span>
+    <span class="spacer"></span>
+    <button mat-button routerLink="/logout">Logout</button>
+    </mat-toolbar>
+    <mat-card>
+    <mat-card-title>{{ article.title }}</mat-card-title>
+    <mat-card-content>{{ article.content }}</mat-card-content>
+    </mat-card>
+    <div class="comment-section">
+    <mat-card>
+    <mat-form-field>
+    <textarea matInput placeholder="Leave a comment"></textarea>
+    </mat-form-field>
+    <button mat-button (click)="addComment()">Add Comment</button>
+    </mat-card>
+    <mat-card *ngFor="let comment of comments">
+    <mat-card-content>{{ comment.content }}</mat-card-content>
+    </mat-card>
+    </div> -->
+
+
+
+
+<!-- <div class="float-container">
+    <div class="card float-item" *ngFor="let arti of Articles">
+        <div class="card-body" >
+            <small class="bg-liht text-danger text-center">  {{arti.DisLikes}}  </small>
+            <small class="bg-liht text-success text-center ml-3">  {{arti.Likes}}  </small>
+            <small class="bg-liht text-info text-center ml-3"> {{arti.author}} </small>
+            <h5 class="mt-1"> {{arti.title}} </h5>
+            <p> {{arti.body}} </p>
+            
+            <small class="bg-liht  text-center ml-3"> {{arti.articledate}} </small>
+            <button>more details</button>
+        </div>
+    </div>  -->
+    
+    <div class="float-container">       
+            <div class="card float-item">
+                <div class="card-body" >
+                    <small class="Small-red">  14  </small>
+                    <small class="Small-grean"> 304 </small>
+                    <small class="Small-bule"> Aljoharah </small>
+                    <h4 class="mt-1"> Mental Health </h4>
+                    <p>Mental health includes our emotional, psychological, and social well-being. It affects how we think, feel, and act.</p>
+                    
+                    <small class="Small-bule"> 2024-08-11T10:24:26.410435 </small>
+                    <button class="button login__submit" >more details</button>
+                </div>
+            </div>
+        
+       
+            <div class="card float-item">
+                <div class="card-body" >
+                    <small class="Small-red">  38  </small>
+                    <small class="Small-grean">  984 </small>
+                    <small class="Small-bule"> Lama </small>
+                    <h4 class="mt-1"> programing </h4>
+                    <p>Hello World is the most common word that any programmer will defiantly know.</p>
+                    
+                    <small class="Small-bule"> 2024-08-11T10:24:26.453267 </small>
+                    <button class="button login__submit" >more details</button>
+                </div>
+            </div>
+        
+        
+            <div class="card float-item">
+                <div class="card-body" >
+                    <small class="Small-red">  478  </small>
+                    <small class="Small-grean">  2689 </small>
+                    <small class="Small-bule"> Norah </small>
+                    <h4 class="mt-1"> Artificial intelligence </h4>
+                    <p>in its broadest sense, is intelligence exhibited by machines, particularly computer systems.</p>
+                    
+                    <small class="Small-bule"> 2024-08-11T10:24:26.460218 </small>
+                    <button class="button login__submit" >more details</button>
+                </div>
+            </div>
+
+
+            <div class="card float-item">
+                <div class="card-body" >
+                    <small class="Small-red">  658  </small>
+                    <small class="Small-grean">  3570 </small>
+                    <small class="Small-bule"> Lama </small>
+                    <h4 class="mt-1">Article to go</h4>
+                    <p>the people read articles to achieving defined goals.</p>
+                    
+                    <small class="Small-bule"> 2024-08-11T10:24:26.468193 </small>
+                    <button class="button login__submit" >more details</button>
+                </div>
+            </div>
+
+
+            <div class="card float-item">
+                <div class="card-body" >
+                    <small class="Small-red">  1257  </small>
+                    <small class="Small-grean">  9876 </small>
+                    <small class="Small-bule"> Norah </small>
+                    <h4 class="mt-1"> Hi some info to know me  </h4>
+                    <p> I am a student in the cdog college i like to spend my free time with my family i study in medical school . </p>
+                    
+                    <small class="Small-bule"> 2024-08-11T10:24:26.477168 </small>
+                    <button class="button login__submit" >more details</button>
+                </div>
+            </div>
+
+
+            <div class="card float-item">
+                <div class="card-body" >
+                    <small class="Small-red"> 658 </small>
+                    <small class="Small-grean">  3570 </small>
+                    <small class="Small-bule"> Aljoharah </small>
+                    <h4 class="mt-1"> this is Title </h4>
+                    <p>hear are the the content that you want every one to see .</p>
+                    
+                    <small class="Small-bule"> 2024-08-11T10:24:26.483156 </small>
+                    <button class="button login__submit" >more details</button>
+                </div>
+            </div>
+
+
+
+
+
+
+            <!-- <div class="card float-item">
+                <div class="card-body" >
+                    <small class="Small-red">  123  </small>
+                    <small class="Small-grean">  4789 </small>
+                    <small class="Small-bule"> Norah </small>
+                    <h4 class="mt-1"> Article title </h4>
+                    <p> Article Content article content article content article content article content article content article content article content article content article content </p>
+                    
+                    <small class="Small-bule"> 2024-08-11T08:43:28.77165 </small>
+                    <button class="button login__submit" >more details</button>
+                </div>
+            </div>
+
+
+            <div class="card float-item">
+                <div class="card-body" >
+                    <small class="Small-red">  123  </small>
+                    <small class="Small-grean">  4789 </small>
+                    <small class="Small-bule"> Norah </small>
+                    <h4 class="mt-1"> Article title </h4>
+                    <p> Article Content article content article content article content article content article content article content article content article content article content </p>
+                    
+                    <small class="Small-bule"> 2024-08-11T08:43:28.77165 </small>
+                    <button class="button login__submit" >more details</button>
+                </div>
+            </div> -->
+    </div>
+   

@@ -1,16 +1,77 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>login</title>
-</head>
-<body>
-    <form action="">
-        <app-header></app-header>
-        <label for="name">UserName:</label><br>
-        <input type="text" id="name" name="name" class="text" ><br>
-        <label for="pass">Password:</label><br>
-        <input type="text" id="pass" name="pass" class="text" ><br><br>
-        <input type="submit" value="login" class="button-style">
-    </form> 
-</body> 
-</html>
+
+    <div class="container">
+        <div class="screen">
+            <div class="screen__content">
+                <app-header></app-header>
+
+                <form class="login" >
+                    <div class="login__field">
+                        <i class="login__icon fas fa-user"></i>
+                        <input type="text" class="login__input" placeholder="User name"
+                         id="username" name="username" >
+                    </div>
+                    <div class="login__field">
+                        <i class="login__icon fas fa-lock"></i>
+                        <input type="password" class="login__input" placeholder="Password" 
+                        id="password" name="password" >
+                    </div>
+                    <div class="button-size">
+                        <button class="button login__submit" (click)="doLogin()">
+                            <span class="button__text">Log In </span>
+                            <i class="button__icon fas  fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    				
+                </form>
+                <div class="social-login">
+                    <h5>if you are new go to Sign up</h5>
+                    <button class="button login__submit" (click)="gotoSignUp()">
+                        <span class="button__text">singup</span>
+                        <i class="button__icon fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="screen__background">
+                <span class="screen__background__shape screen__background__shape4"></span>
+                <span class="screen__background__shape screen__background__shape3"></span>		
+                <span class="screen__background__shape screen__background__shape2"></span>
+                <span class="screen__background__shape screen__background__shape1"></span>
+            </div>		
+        </div>
+    </div>
+
+    <!-- <!DOCTYPE html>
+    <html lang="en" >
+    <head>
+      <meta charset="UTF-8">
+      <title>Login</title>
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+      <link rel="stylesheet" href="/css/style.css">
+      <script src="/js/signup.js" defer></script>
+    </head>
+    <body>
+    <body>
+        <section>
+            <form action="/login" method="post">
+                <h1>Login</h1>
+                <div class="inputbox">
+                    <ion-icon name="email-outline"></ion-icon>
+                    <input name="name" type="name" required>
+                    <label for="">Email</label>
+                </div>
+                <div class="inputbox">
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                    <input name="password" type="password" required>
+                    <label for="">Password</label>
+                </div>
+                <div class="register">
+                    <p><a href="#">Forget Password ?</a></p>
+                </div>
+                <button>Log in</button>
+                <div class="register">
+                    <p>Don't have a account ?<a href=""> Register!!</a></p>
+                </div>
+            </form>
+        </section>
+    </body> -->

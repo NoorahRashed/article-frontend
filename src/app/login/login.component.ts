@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthService } from '../services/auth.service';
+import { Route, Router } from '@angular/router';
+import { AuthService } from '../servises/auth.service';
 
 @Component({
   selector: 'app-login',
@@ -7,12 +8,25 @@ import { AuthService } from '../services/auth.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-[x: string]: any;
 
-  constructor(private auth:AuthService) { }
+  username!:String;
+  password!:String;
+  massage:any;
+
+
+  constructor(private _router: Router,private service:AuthService) { }
 
   ngOnInit(): void {
-    this.auth
   }
 
+  gotoSignUp(){
+    this._router.navigate(['signup']);
+  }
+
+  doLogin(){
+    let resp = this.service.login(this.username,this.password);
+    resp.subscribe(data=>{
+      console.log(data)
+    })
+  }
 }

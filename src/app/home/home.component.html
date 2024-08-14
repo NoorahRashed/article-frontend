@@ -1,11 +1,81 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>HOME</title>
-</head>
-<body>
-    <app-header></app-header>
-    <app-article-list></app-article-list>
-    <form><input type="button" value="Add Article" class="button-style"></form>
-</body>
-</html>
+<!-- <mat-toolbar color="primary">
+    <span>Website Name</span>
+    <span class="spacer"></span>
+    <button mat-button routerLink="/login">Login</button>
+    </mat-toolbar>
+    <div class="container">
+    <div class="articles">
+    <mat-card *ngFor="let article of articles">
+    <mat-card-title>{{ article.title }}</mat-card-title>
+    <mat-card-content>{{ article.content | slice:0:100 }}...</mat-card-content>
+    <button mat-button routerLink="/article/{{
+    article.id
+    }}">Read More</button>
+    </mat-card>
+    </div>
+    <button mat-fab color="accent" routerLink="/add-article">+</button>
+    </div> -->
+<!-- component -->
+
+
+
+<!-- <div class="container">
+    <div class="text">
+       Contact us Form
+    </div>
+    <form action="">
+       <div class="form-row">
+          <div class="input-data">
+             <input type="text" required>
+             <div class="underline"></div>
+             <label for="">First Name</label>
+          </div>
+          <div class="input-data">
+             <input type="text" required>
+             <div class="underline"></div>
+             <label for="">Last Name</label>
+          </div>
+       </div>
+       <div class="form-row">
+          <div class="input-data">
+             <input type="text" required>
+             <div class="underline"></div>
+             <label for="">Email Address</label>
+          </div>
+          <div class="input-data">
+             <input type="text" required>
+             <div class="underline"></div>
+             <label for="">Website Name</label>
+          </div>
+       </div>
+       <div class="form-row">
+       <div class="input-data textarea">
+          <textarea rows="8" cols="80" required></textarea>
+          <br />
+          <div class="underline"></div>
+          <label for="">Write your message</label>
+          <br />
+          <div class="form-row submit-btn">
+             <div class="input-data">
+                <div class="inner"></div>
+                <input type="submit" value="submit">
+             </div>
+          </div>
+       
+      
+</div> -->
+<!-- <div class="container">
+    <div class="screen">
+        <div class="screen__background">
+            <span class="screen__background__shape screen__background__shape4"></span>
+            <span class="screen__background__shape screen__background__shape3"></span>		
+            <span class="screen__background__shape screen__background__shape2"></span>
+            <span class="screen__background__shape screen__background__shape1"></span>
+        </div>
+    </div>
+</div> -->
+
+
+<h1>Home</h1>
+<app-article-detail></app-article-detail>
+	

@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MyServiceService } from '../services/my-service.service';
-import { MyArticle } from './my-article';
+import { Articlee } from '../article-detail/articlee';
 
 @Component({
   selector: 'app-article',
@@ -8,18 +7,11 @@ import { MyArticle } from './my-article';
   styleUrls: ['./article.component.css']
 })
 export class ArticleComponent implements OnInit {
-  article!: MyArticle;
 
-  constructor(private myService :MyServiceService) { }
+  constructor() { }
 
   ngOnInit(): void {
-    
-  }
-
-  myAarticleget(){
-    this.myService.getMyArticle(1).subscribe((data :MyArticle)=>{
-      this.article=data;
-    })
+ 
   }
 
 }

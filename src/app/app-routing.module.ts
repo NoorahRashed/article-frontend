@@ -1,18 +1,22 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
+import { ArticleDetailComponent } from './article-detail/article-detail.component';
+import { AddArticleComponent } from './add-article/add-article.component';
 import { LoginComponent } from './login/login.component';
-import { OneArticletComponent } from './article/add-article/one-articlet.component';
-import { ArticleListComponent } from './article/article-list/article-list.component';
-import { ArticleComponent } from './article/article.component';
+import { SignupComponent } from './signup/signup.component';
+import { CommentFormComponent } from './comment-form/comment-form.component';
 
 
 const routes: Routes = [
-  {path : '' , component : HomeComponent },
-  {path : 'login' , component : LoginComponent },
-  {path : 'article-list' , component : ArticleListComponent },
-  {path : 'article/:id' , component : ArticleComponent },
-  {path : 'add-article' , component: OneArticletComponent }
+  { path: 'home', component: HomeComponent },
+  { path: 'article/:id', component: ArticleDetailComponent },
+  { path: 'add-article', component: AddArticleComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'signup', component: SignupComponent },
+  { path: '', component: LoginComponent },
+  { path: 'comment-form', component: CommentFormComponent},
+
 ];
 
 @NgModule({

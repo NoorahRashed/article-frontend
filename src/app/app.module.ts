@@ -3,37 +3,40 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
-import { HeaderComponent } from './header/header.component';
-import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
-import { ArticleComponent } from './article/article.component';
-import { ArticleListComponent } from './article/article-list/article-list.component';
-import { OneArticletComponent } from './article/add-article/one-articlet.component';
-import { CommentFormComponent } from './article/comment-form/comment-form.component';
-import { CommentListComponent } from './article/comment-list/comment-list.component';
-import { MyServiceService } from './services/my-service.service';
+//import { ArticleComponent } from './article/article.component';
+import { ArticleDetailComponent } from './article-detail/article-detail.component';
+import { AddArticleComponent } from './add-article/add-article.component';
+import { LoginComponent } from './login/login.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SignupComponent } from './signup/signup.component';
+import { HeaderComponent } from './header/header.component';
+import { CommentFormComponent } from './comment-form/comment-form.component';
+import { CommentComponent } from './comment/comment.component';
+import { HttpClientModule } from '@angular/common/http';
+import { AuthService } from './servises/auth.service';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    LoginComponent,
     HomeComponent,
-    ArticleComponent,
-    ArticleListComponent,
-    OneArticletComponent,
+    ArticleDetailComponent,
+    AddArticleComponent,
+    LoginComponent,
+    SignupComponent,
+    HeaderComponent,
     CommentFormComponent,
-    CommentListComponent,
+    CommentComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule,
-    HttpClientModule
+    BrowserAnimationsModule,
+    HttpClientModule,
+    
   ],
-  providers: [MyServiceService],
-  bootstrap: [AppComponent]
+ providers: [AuthService],
+ bootstrap: [AppComponent]
 })
 export class AppModule { }
